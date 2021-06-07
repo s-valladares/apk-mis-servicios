@@ -17,7 +17,7 @@ import retrofit2.Response
 class AuthRepository: AuthDataSource {
 
     private var call: Call<RegisterResponse>?=null
-    private val TAG = "AUTHREPOSITORY"
+    private val TAG = "AUTH_REPOSITORY"
 
     // Repository para registarse --> register
     override fun postRegister(callback: OperationCallBack<RegisterResponse>, user: Register) {
