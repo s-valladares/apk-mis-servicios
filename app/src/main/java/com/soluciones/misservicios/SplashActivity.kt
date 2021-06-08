@@ -20,9 +20,9 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun setAnimation(){
-        binding.img.animate().translationY(-4000f).setDuration(800).startDelay = 6000
-        binding.logo.animate().translationY(3000f).setDuration(800).startDelay = 6000
-        binding.appName.animate().translationY(3000f).setDuration(800).startDelay = 6000
-        binding.lottie.animate().translationY(3000f).setDuration(800).startDelay = 6000
+        binding.img.animate().translationY(-4000f).setDuration(1000).startDelay = 5000
+        binding.logo.animate().translationY(3000f).setDuration(1000).startDelay = 5000
+        binding.appName.animate().translationY(3000f).setDuration(1000).startDelay = 5000
+        binding.lottie.animate().translationY(3000f).setDuration(1000).startDelay = 5000
     }
 }
