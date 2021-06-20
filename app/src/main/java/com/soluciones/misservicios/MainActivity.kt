@@ -6,13 +6,11 @@ import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.soluciones.misservicios.data.models.Register
 import com.soluciones.misservicios.data.models.RegisterResponse
 import com.soluciones.misservicios.data.repositories.auth.AuthRepository
 import com.soluciones.misservicios.databinding.ActivityMainBinding
 import com.soluciones.misservicios.viewmodel.ViewModelFactory
 import com.soluciones.misservicios.viewmodel.auth.AuthViewModel
-import kotlinx.android.synthetic.main.activity_main.*
 import com.soluciones.misservicios.utilities.constantes.TAGs
 
 class MainActivity : AppCompatActivity() {
@@ -30,8 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         setUpViewModel()
         setUI()
-
-
 
     }
 
@@ -57,10 +53,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUI(){
-
-
-
-        btn_register.setOnClickListener{
+        /*btn_register.setOnClickListener{
             val user = Register(
                 nombreUsuario = "salva.1412@gmail.com",
                 password = "123456",
@@ -69,6 +62,6 @@ class MainActivity : AppCompatActivity() {
                 persona_id = "3"
             );
             viewModel.registerUser(user)
-        }
+        }*/
     }
 }
